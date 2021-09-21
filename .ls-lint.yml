@@ -1,0 +1,17 @@
+ls:
+    .dir: kebab-case
+    .js: kebab-case
+    .json: kebab-case
+    .ts: kebab-case
+    .spec.ts: kebab-case
+
+ignore:
+    - .git
+    - .github
+    - .idea
+    - .ls-lint.yml
+    - .nyc_output
+    - .husky
+    - node_modules
+    - docker
+    - "@types"

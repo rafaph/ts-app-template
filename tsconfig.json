@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@app/*": ["*"],
+            "@test/*": ["../test/*"]
+        },
+        "declaration": true,
+        "declarationMap": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "incremental": false,
+        "lib": [
+            "ES2020"
+        ],
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "dist",
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "target": "ES2019",
+        "typeRoots": [
+            "node_modules/@types",
+            "@types"
+        ]
+    }
+}

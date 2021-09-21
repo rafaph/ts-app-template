@@ -1,0 +1,4 @@
+.git
+.husky
+node_modules
+docker
