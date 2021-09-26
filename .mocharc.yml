@@ -6,4 +6,5 @@ spec:
 require:
     - ts-node/register
     - tsconfig-paths/register
+    - test/setup.ts
     - chai/register-expect

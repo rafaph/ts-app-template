@@ -2,8 +2,12 @@
     "compilerOptions": {
         "baseUrl": "src",
         "paths": {
-            "@app/*": ["*"],
-            "@test/*": ["../test/*"]
+            "@app/*": [
+                "*"
+            ],
+            "@test/*": [
+                "../test/*"
+            ]
         },
         "declaration": true,
         "declarationMap": true,
@@ -21,7 +25,6 @@
         "noUnusedParameters": true,
         "outDir": "dist",
         "resolveJsonModule": true,
-        "sourceMap": true,
         "inlineSourceMap": true,
         "inlineSources": true,
         "strict": true,
@@ -33,5 +36,10 @@
             "node_modules/@types",
             "@types"
         ]
-    }
+    },
+    "include": [
+        "src",
+        "test",
+        "index.ts"
+    ]
 }

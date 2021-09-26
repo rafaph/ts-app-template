@@ -34,11 +34,14 @@ npm i
 5) Run a any desired npm script:
 
 ```
+npm run start
 npm run test
 npm run test:watch
 npm run test:cov
 npm run lint
 npm run lint:fix
+npm run build
+npm run build:watch
 ```
 
 Obs: lint:fix also formats your code using prettier.
@@ -51,7 +54,7 @@ docker-compose down --remove-orphans -t 30
 
 ## Features
 
-1) Docker-compose file using last NodeJS (and npm) LTS version.
+1) Docker-compose file using last NodeJS LTS version.
 2) Typescript configured using paths alias for src (@app) and test (@test).
 3) Test framework (mocha) configured with chai/expect assertions, coverage (with nyc) and sinon for mocks.
 4) All linting goodies (linting folders, files names and also your code [eslint]).
