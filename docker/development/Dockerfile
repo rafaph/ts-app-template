@@ -3,6 +3,8 @@ FROM node:lts-alpine
 RUN apk add --update --no-cache ruby python3 make gcc g++ shadow && \
     ln -sf python3 /usr/bin/python
 
+RUN npm install --global npm
+
 ARG UID
 ARG GID
 

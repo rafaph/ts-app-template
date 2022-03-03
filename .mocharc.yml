@@ -1,10 +1,10 @@
 timeout: 15000
 extension:
-    - ts
+  - ts
 spec:
-    - test/**/*.spec.ts
+  - test/**/*.spec.ts
 require:
-    - ts-node/register
-    - tsconfig-paths/register
-    - test/setup.ts
-    - chai/register-expect.js
+  - ts-node/register
+  - tsconfig-paths/register
+  - test/setup.ts
+  - chai/register-expect.js

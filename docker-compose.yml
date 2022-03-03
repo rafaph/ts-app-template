@@ -1,20 +1,20 @@
 version: "3.9"
 
 services:
-    server:
-        build:
-            context: docker/development
-            args:
-                UID: $UID
-                GID: $GID
-        container_name: my-ts-app
-        hostname: server
-        command: [ "/bin/sh" ]
-        tty: true
-        ports:
-            - "3000:3000"
-        volumes:
-            - .:/usr/src/app
-        working_dir: /usr/src/app
-        env_file:
-            - .env
+  server:
+    build:
+      context: docker/development
+      args:
+        UID: $UID
+        GID: $GID
+    container_name: my-ts-app
+    hostname: server
+    command: [ "/bin/sh" ]
+    tty: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    env_file:
+      - .env
