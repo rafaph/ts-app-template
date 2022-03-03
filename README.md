@@ -18,16 +18,16 @@ find . -type f | xargs sed -i  's/my-ts-app/your-app/g'
 
 Obs: change `your-app` to your app name.
 
-4) Start container:
+3) Start container:
 
 ```
-docker-compose up -d --build
+make up
 ```
 
 4) Install dependencies:
 
 ```
-docker-compose exec server sh
+make shell
 npm i
 ```
 
@@ -49,7 +49,7 @@ Obs: lint:fix also formats your code using prettier.
 6) Remove container:
 
 ```
-docker-compose down --remove-orphans -t 30
+make down
 ```
 
 ## Features

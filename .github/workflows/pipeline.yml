@@ -23,7 +23,7 @@ jobs:
             -   name: Install NPM dependencies
                 run: |
                     if [ ! -d node_modules ]; then
-                      npm ci
+                      npm ci --ignore-scripts
                     fi
                     npx patch-package
             -   name: Lint
@@ -49,7 +49,7 @@ jobs:
             -   name: Install Dependencies
                 run: |
                     if [ ! -d node_modules ]; then
-                      npm ci
+                      npm ci --ignore-scripts
                     fi
                     npx patch-package
             -   name: Test
