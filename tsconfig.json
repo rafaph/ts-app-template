@@ -13,11 +13,10 @@
     "declarationMap": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
-    "moduleResolution": "Node",
     "experimentalDecorators": true,
     "incremental": false,
     "lib": [
-      "ES2020"
+      "ESNext"
     ],
     "module": "commonjs",
     "noImplicitAny": true,
@@ -40,7 +39,6 @@
   },
   "include": [
     "src",
-    "test",
-    "index.ts"
+    "test"
   ]
 }
